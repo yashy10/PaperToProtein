@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment & secrets
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+*.pem
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Vite
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Large data files (PDB structures, CIF complexes, Boltz-2 results)
+*.pdb
+*.cif
+*.mmcif
+boltz2_results.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Modal
+.modal/
