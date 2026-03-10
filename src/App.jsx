@@ -1349,6 +1349,7 @@ const ProteinViewer = memo(function ProteinViewer({ protein, pdbId }) {
       procedural();
     }
     let fid;
+    group.rotation.x=Math.random()*Math.PI*2;group.rotation.y=Math.random()*Math.PI*2;group.rotation.z=Math.random()*Math.PI*2;
     const anim=()=>{fid=requestAnimationFrame(anim);group.rotation.y+=.005;group.rotation.x+=.0015;renderer.render(scene,camera)};
     anim();
     return()=>{stop=true;cancelAnimationFrame(fid);renderer.dispose();if(renderer.domElement.parentNode===el)el.removeChild(renderer.domElement)};
